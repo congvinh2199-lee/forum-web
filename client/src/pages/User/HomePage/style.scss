@@ -1,0 +1,151 @@
+.home-page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  @media screen and (max-width: 800px) {
+    .left-frame,
+    .right-frame {
+      width: 100% !important;
+    }
+  }
+
+  .left-frame {
+    width: 70%;
+    background-color: white;
+    box-sizing: border-box;
+
+    .question-frame {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 30px;
+
+      .image-frame {
+        width: 50px;
+      }
+
+      .input-frame {
+        width: calc(100% - 50px);
+        input {
+          width: 100%;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .right-frame {
+    width: 26%;
+    background-color: white;
+    height: 1200px;
+    overflow: auto;
+  }
+
+  .question-frame {
+    .question-item {
+      width: 100%;
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .button-frame {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .right-frame {
+    .first {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      .css-sghohy-MuiButtonBase-root-MuiButton-root {
+        width: 80%;
+      }
+    }
+    .second {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      input {
+        width: 80%;
+        height: 30px;
+      }
+
+      .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+        margin-top: 15px;
+        width: 80%;
+      }
+    }
+
+    .third {
+      table {
+        border-spacing: 1em;
+        margin: 1rem auto;
+      }
+
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      td {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #93BBE9;
+        text-align: center;
+        width: 49%;
+        box-sizing: border-box;
+        min-width: 100px;
+        margin-top: 2%;
+        .title {
+          font-size: 12px;
+          white-space: nowrap;
+          font-weight: 600;
+        }
+
+        .result {
+          font-weight: 900;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .five {
+      .tag-frame {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 30px;
+        padding-right: 30px;
+        .tag-item {
+          padding: 5px;
+          border: 0.5px solid gray;
+          font-size: 12px;
+          margin-left: 5px;
+          margin-top: 5px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .home-page {
+    padding-left: 80px;
+    padding-right: 40px;
+  }
+}

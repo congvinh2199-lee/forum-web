@@ -1,0 +1,16 @@
+.question-detail {
+  padding: 30px;
+  .question-item {
+    width: 100%;
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  .question-item-answer {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
